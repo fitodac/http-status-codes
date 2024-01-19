@@ -18,5 +18,11 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [nextui()],
+	plugins: [nextui({
+		themes: {
+			dark: {
+				
+			}
+		}
+	})],
 }

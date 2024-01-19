@@ -11,7 +11,11 @@ import {
 
 export const List = ({ title, data, color }) => {
 	return (
-		<Card>
+		<Card
+			classNames={{
+				base: 'dark:bg-black/30',
+			}}
+		>
 			<CardHeader>
 				<h3 className={`text-${color}`}>{title}</h3>
 			</CardHeader>
@@ -27,11 +31,14 @@ export const List = ({ title, data, color }) => {
 									<Chip color={color} variant="flat">
 										{code}
 									</Chip>
-									<div className="font-medium">{title}</div>
+									<div className="font-medium dark:text-slate-300">{title}</div>
 								</div>
 							}
 						>
-							{description}
+							<div
+								className="text-sm leading-6 pt-3 pb-7 dark:text-slate-300"
+								dangerouslySetInnerHTML={description}
+							/>
 						</AccordionItem>
 					))}
 				</Accordion>

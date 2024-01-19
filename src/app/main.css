@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+code {
+	@apply bg-blue-50 text-blue-600 px-1 py-px rounded-md dark:bg-blue-500/20 dark:text-blue-400;
+}
