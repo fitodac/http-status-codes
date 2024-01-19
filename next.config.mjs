@@ -2,9 +2,8 @@
 const nextConfig = {
 	output: 'export',
 	trailingSlash: true,
-	crossOrigin: 'anonymous',
-	basePath: '/http-status-codes',
-	distDir: 'docs',
+	basePath: '/out',
+	distDir: 'docs/out',
 }
 
 export default nextConfig
